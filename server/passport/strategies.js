@@ -42,6 +42,8 @@ module.exports = (passport) => {
           password: generateHash(password),
           firstName: body.firstName,
           lastName: body.lastName,
+          favCoffee: body.favCoffee,
+          favoriteCoffeeShop: body.favoriteCoffeeShop,
           role: body.role
         }
       })

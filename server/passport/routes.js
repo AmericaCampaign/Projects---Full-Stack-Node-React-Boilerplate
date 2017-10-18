@@ -23,7 +23,7 @@ module.exports = (app, passport) => {
         if (err) {
           return next(err)
         }
-
+        console.log('user sign up success', user)
         return res.status(200).json({
           message: 'Signup successful',
           data: user
